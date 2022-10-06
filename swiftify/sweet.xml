@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <!-- Bootable -->
+  <project path="bootable/recovery" name="sw_bootable_recovery" remote="sweet" />
+
+  <!-- Common -->
+  <project path="official-maintainer" name="database" remote="sweet-device" />
+
+  <!-- Device -->
+  <project path="device/swift/sepolicy" name="sw_device_swift_sepolicy" remote="sweet" />
+  <project path="device/qcom/sepolicy" name="sw_device_qcom_sepolicy" remote="sweet" />
+  <project path="device/qcom/sepolicy_vndr" name="sw_device_qcom_sepolicy_vndr" remote="sweet" />
+  <project path="device/qcom/sepolicy-legacy" name="sw_device_qcom_sepolicy-legacy" remote="sweet" />
+  <project path="device/qcom/sepolicy-legacy-um" name="sw_device_qcom_sepolicy-legacy-um" remote="sweet" />
+
+  <!-- External -->
+  <project path="external/e2fsprogs" name="sw_external_e2fsprogs" remote="sweet" />
+  <project path="external/gptfdisk" name="sw_external_gptfdisk" remote="sweet" />
+  <project path="external/exfatprogs" name="sw_external_exfatprogs" remote="sweet" />
+  <project path="external/mksh" name="sw_external_mksh" remote="sweet" />
+  <project path="external/ntfs-3g" name="sw_external_ntfs-3g" remote="sweet" />
+  <project path="external/f2fs-tools" name="sw_external_f2fs-tools" remote="sweet" />
+  <project path="external/json-c" name="sw_external_json-c" remote="sweet" />
+  <project path="external/sqlite" name="sw_external_sqlite" remote="sweet" />
+  <project path="external/tinycompress" name="sw_external_tinycompress" remote="sweet" />
+  <project path="external/tinyxml" name="sw_external_tinyxml" remote="sweet" />
+
+  <!-- Frameworks -->
+  <project path="frameworks/av" name="sw_frameworks_av" remote="sweet" />
+  <project path="frameworks/base" name="sw_frameworks_base" remote="sweet" />
+  <project path="frameworks/native" name="sw_frameworks_native" remote="sweet" />
+  <project path="frameworks/opt/telephony" name="sw_frameworks_opt_telephony" remote="sweet" />
+
+  <!-- Hardware -->
+  <project path="hardware/qcom-caf/thermal" name="sw_hardware_qcom_thermal" remote="sweet" />
+  <project path="hardware/qcom-caf/wlan" name="sw_hardware_qcom-caf_wlan" remote="sweet"/>
+  <project path="hardware/libhardware" name="sw_hardware_libhardware" remote="sweet" />
+  <project path="hardware/xiaomi" name="sw_hardware_xiaomi" remote="sweet" />
+
+  <!-- Packages Apps -->
+  <project path="packages/apps/Settings" name="sw_packages_apps_Settings" remote="sweet" />
+  <project path="packages/apps/Nfc" name="sw_packages_apps_Nfc" remote="sweet" />
+
+  <!-- Packages Modules -->
+  <project path="packages/modules/Bluetooth" name="sw_packages_modules_Bluetooth" remote="sweet" />
+  <project path="packages/modules/Wifi" name="sw_packages_modules_Wifi" remote="sweet" />
+  <project path="packages/modules/Permission" name="sw_packages_modules_Permission" remote="sweet" />
+
+  <!-- Prebuilts -->
+  <project path="prebuilts/abi-dumps/vndk" name="sw_prebuilts_abi-dumps_vndk" remote="sweet" />
+
+  <!-- Root -->
+  <project path="art" name="sw_art" remote="sweet" />
+  <project path="bionic" name="sw_bionic" remote="sweet" />
+  <project path="build/make" name="sw_build" remote="sweet" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+  <project path="build/soong" name="sw_build_soong" remote="sweet" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+  <project path="libcore" name="sw_libcore" remote="sweet" />
+
+  <!-- System -->
+  <project path="system/update_engine" name="sw_system_update_engine" remote="sweet" />
+  <project path="system/core" name="sw_system_core" remote="sweet" />
+  <project path="system/sepolicy" name="sw_system_sepolicy" remote="sweet" />
+  <project path="system/vold" name="sw_system_vold" remote="sweet" />
+  <project path="system/extras" name="sw_system_extras" remote="sweet" />
+  <project path="system/logging" name="sw_system_logging" remote="sweet" />
+  <project path="system/libhidl" name="sw_system_libhidl" remote="sweet" />
+  <project path="system/tools/mkbootimg" name="sw_system_tools_mkbootimg" remote="sweet" />
+  
+  <!-- Vendor -->
+  <project path="vendor/swift" name="sw_vendor_swift" remote="sweet" />
+  <project path="vendor/swiftify" name="sw_vendor_swiftify" remote="sweet" />
+  <project path="vendor/qcom/opensource/vibrator" name="sw_vendor_qcom_opensource_vibrator" remote="sweet" />
+ 
+</manifest>

@@ -2,8 +2,28 @@
 <manifest>
 
   <remote  name="aosp"
-           fetch=".."
+           fetch="https://android.googlesource.com"
            review="https://android-review.googlesource.com/" />
+
+  <remote  name="sweet"
+           fetch="https://github.com/SwiftAOSP"
+           revision="13" />
+         
+  <remote  name="sweet-device"
+           fetch="https://github.com/SwiftAOSP-devices"
+           revision="13" />
+
+  <remote  name="sweet-gitlab"
+           fetch="https://gitlab.com/SwiftOS"
+           revision="13" />
+
+  <remote  name="gitlab"
+           revision="twelve"
+           fetch="https://gitlab.com/" />
+
+  <remote  name="github"
+           fetch="https://github.com/" />
+  
   <default revision="refs/tags/android-13.0.0_r8"
            remote="aosp"
            sync-j="4" />
@@ -1166,5 +1186,10 @@
   <project path="tools/tradefederation/prebuilts" name="platform/tools/tradefederation/prebuilts" groups="pdk,tradefed" clone-depth="1" />
   <project path="tools/treble" name="platform/tools/treble" groups="tools,pdk" />
   <project path="tools/trebuchet" name="platform/tools/trebuchet" groups="tools,cts,pdk,pdk-cw-fs,pdk-fs" />
+
+  <include name="swiftify/clean.xml" />
+  <include name="swiftify/sweet.xml" />
+  <include name="swiftify/other.xml" />
+
   <!-- END open-source projects -->
 </manifest>
