@@ -4,7 +4,7 @@
   <!-- Build -->
   <remove-project name="platform/build" />
   <remove-project name="platform/build/soong" />
-
+  
   <!-- Device -->
   <remove-project name="device/amlogic/yukawa" />
   <remove-project name="device/amlogic/yukawa-kernel" />
@@ -26,11 +26,25 @@
   <remove-project name="device/google/atv" />
   <remove-project name="device/google/barbet" />
   <remove-project name="device/google/barbet-sepolicy" />
+  <remove-project name="device/google/bluejay" />
+  <remove-project name="device/google/bluejay-sepolicy" />
+  <remove-project name="device/google/bluejay-kernel" />
   <remove-project name="device/google/bramble" />
   <remove-project name="device/google/bramble-sepolicy" />
+  <remove-project name="device/google/contexthub" />
   <remove-project name="device/google/coral" />
   <remove-project name="device/google/coral-kernel" />
   <remove-project name="device/google/coral-sepolicy" />
+  <remove-project name="device/google/gs101" />
+  <remove-project name="device/google/gs201" />
+  <remove-project name="device/google/gs101-sepolicy" />
+  <remove-project name="device/google/gs201-sepolicy" />
+  <remove-project name="device/google/gs-common" />
+  <remove-project name="device/google/pantah" />
+  <remove-project name="device/google/pantah-sepolicy" />
+  <remove-project name="device/google/pantah-kernel" />
+  <remove-project name="device/google/raviole" />
+  <remove-project name="device/google/raviole-kernel" />
   <remove-project name="device/google/redbull" />
   <remove-project name="device/google/redbull-sepolicy" />
   <remove-project name="device/google/redbull-kernel" />
@@ -52,7 +66,7 @@
   <remove-project name="device/sample" />
   <remove-project name="device/ti/beagle-x15" />
   <remove-project name="device/ti/beagle-x15-kernel" />
-
+  
   <!-- External -->
   <remove-project name="platform/external/selinux" />
   <remove-project name="platform/external/tinycompress" />
