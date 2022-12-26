@@ -16,5 +16,5 @@ AOSP ROM with Simplified Upgrade
 ```bash
         . build/envsetup.sh
         lunch swift_$devicecodename-userdebug
-        make swift
+        make sweet
 ```

@@ -80,7 +80,7 @@
   
   <!-- Vendor -->
   <project path="vendor/swift" name="sw_vendor_swift" remote="sweet" />
-  <project path="vendor/swiftify" name="sw_vendor_swiftify" remote="sweet" />
+  <project path="vendor/sweetea" name="sw_vendor_sweetea" remote="sweet" />
   <project path="vendor/qcom/opensource/vibrator" name="sw_vendor_qcom_opensource_vibrator" remote="sweet" />
  
 </manifest>
